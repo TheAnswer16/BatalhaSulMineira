@@ -1,0 +1,147 @@
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
+header{
+    min-height:100vh;
+    height: 100%;
+    background-image: url("fundo.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: #9e000d;
+    transition: 0.5s background-color, 0.5s height;
+    display: flex;
+}
+
+nav img{
+    margin-left: 10px;
+    width:32px;
+    display: none;
+    
+}
+
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+
+}
+
+nav ul li {
+    padding: 15px;
+    transition: 0.2s background-color;
+}
+
+nav ul li:hover{
+    background-color: rgba(98, 98, 98, 0.2);
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Federant';
+    font-size:25px;
+    color: white;
+}
+
+.nav-mobile{
+    min-width: 70%;
+    width:auto;
+    height: 100%;
+    display: none;
+    position: fixed;
+}
+
+.nav-mobile ul{
+    display: block;
+}
+
+.nav-close{
+    height:32px;
+    padding: 15px;
+}
+
+main{
+    padding: 0;
+}
+
+section{
+    min-height:100vh;
+    height: auto;
+    padding-top: 65px;
+}
+
+.titulo-principal{
+    font-family: 'Federant';
+    font-size: 55px;
+    text-align: center;
+}
+
+.texto-curto{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    font-family:"Roboto" ;
+}
+
+#about .titulo-principal{
+    color:#F20505;
+}
+
+#about p{
+    color:#F20505;
+
+}
+
+#about figure{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#about img{
+    width: 450px;
+}
+
+#us{
+    background-image: url("micFundo1.png");
+    /* background-position: center; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#us .titulo-principal, #us .texto-curto{
+    color:white;
+}
+
+
+@media screen and (max-width:768px){
+    header nav{
+        padding: 15px;
+    }
+
+    nav img{
+        display: flex;
+    }
+
+    #top ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    #about img{
+        width: 60%;
+    }
+}
